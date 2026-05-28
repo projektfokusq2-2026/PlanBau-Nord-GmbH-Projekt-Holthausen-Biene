@@ -703,61 +703,67 @@
   <div class="site-plan-container">
     <h3 style="font-size:0.9rem;font-weight:600;color:var(--text-mid);margin-bottom:20px;text-align:center;">Lageplan – Eckgrundstück „Lange Straße II"</h3>
     <div class="site-plan-svg-wrap">
-      <svg viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg" font-family="DM Sans, sans-serif">
-        <!-- Street top -->
-        <rect x="0" y="0" width="500" height="50" fill="#d0d8e0" rx="0"/>
-        <text x="250" y="30" text-anchor="middle" fill="#666" font-size="12" font-weight="600">LANGE STRASSE (Nord)</text>
-        <!-- Street right -->
-        <rect x="400" y="0" width="100" height="420" fill="#d0d8e0"/>
-        <text x="450" y="220" text-anchor="middle" fill="#666" font-size="11" font-weight="600" transform="rotate(90,450,220)">PLANSTRASSE (Ost)</text>
-        <!-- Grundstück -->
-        <rect x="40" y="50" width="360" height="320" fill="#f0f7f0" stroke="#333" stroke-width="2.5"/>
-        <!-- Baugrenze (gestrichelt blau) -->
-        <rect x="80" y="90" width="280" height="240" fill="none" stroke="#4a9abb" stroke-width="1.8" stroke-dasharray="6,4"/>
-        <!-- Haus (rot) im NE = x:250-370, y:90-220 -->
-        <rect x="258" y="90" width="102" height="130" fill="#ef9a9a" stroke="#c62828" stroke-width="2" rx="3"/>
-        <text x="309" y="162" text-anchor="middle" fill="#b71c1c" font-size="13" font-weight="700">HAUS</text>
-        <text x="309" y="178" text-anchor="middle" fill="#c62828" font-size="10">180 m²</text>
-        <!-- Terrasse -->
-        <rect x="165" y="90" width="90" height="60" fill="#a5d6a7" stroke="#388e3c" stroke-width="1.5" stroke-dasharray="5,3" rx="3"/>
-        <text x="210" y="118" text-anchor="middle" fill="#2e7d32" font-size="10" font-weight="600">TERRASSE</text>
-        <text x="210" y="132" text-anchor="middle" fill="#2e7d32" font-size="9">32 m²</text>
-        <!-- Carport -->
-        <rect x="328" y="55" width="72" height="35" fill="#fff9c4" stroke="#f57f17" stroke-width="1.5" stroke-dasharray="5,3" rx="3"/>
-        <text x="364" y="70" text-anchor="middle" fill="#e65100" font-size="9" font-weight="600">CARPORT</text>
-        <text x="364" y="82" text-anchor="middle" fill="#e65100" font-size="8">28 m²</text>
-        <!-- Garten (SW) -->
-        <text x="135" y="260" text-anchor="middle" fill="#388e3c" font-size="14" font-weight="700">GARTEN</text>
-        <text x="135" y="278" text-anchor="middle" fill="#388e3c" font-size="11">360 m²</text>
-        <text x="135" y="295" text-anchor="middle" fill="#4caf50" font-size="10">südwestlich ☀️</text>
+      <svg viewBox="0 0 560 480" xmlns="http://www.w3.org/2000/svg" font-family="DM Sans, sans-serif">
+        <defs>
+          <marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6 Z" fill="#555"/>
+          </marker>
+          <marker id="arr-rev" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto-start-reverse">
+            <path d="M0,0 L6,3 L0,6 Z" fill="#555"/>
+          </marker>
+        </defs>
 
-        <!-- Abstand markers -->
-        <!-- 5m top -->
-        <line x1="310" y1="50" x2="310" y2="90" stroke="#666" stroke-width="1" marker-end="url(#arr)"/>
-        <text x="320" y="74" fill="#666" font-size="9">5 m</text>
-        <!-- 5m right -->
-        <line x1="360" y1="160" x2="400" y2="160" stroke="#666" stroke-width="1"/>
-        <text x="373" y="175" fill="#666" font-size="9">5 m</text>
-        <!-- 1m carport top -->
-        <text x="403" y="68" fill="#e65100" font-size="8">1 m</text>
+        <!-- ── STRASSE OBEN (N) ── -->
+        <rect x="20" y="0" width="480" height="46" fill="#cdd5dc" rx="0"/>
+        <text x="260" y="27" text-anchor="middle" fill="#444" font-size="13" font-weight="700" letter-spacing="1">LANGE STRASSE (N)</text>
 
-        <!-- Compass -->
-        <g transform="translate(65,105)">
-          <circle r="18" fill="white" stroke="#ccc" stroke-width="1"/>
-          <text x="0" y="-6" text-anchor="middle" fill="#c62828" font-size="8" font-weight="700">N</text>
-          <text x="0" y="14" text-anchor="middle" fill="#666" font-size="7">S</text>
-          <text x="-12" y="4" text-anchor="middle" fill="#666" font-size="7">W</text>
-          <text x="13" y="4" text-anchor="middle" fill="#666" font-size="7">O</text>
-          <line x1="0" y1="-14" x2="0" y2="14" stroke="#333" stroke-width="1"/>
-          <line x1="-14" y1="0" x2="14" y2="0" stroke="#333" stroke-width="1"/>
-          <polygon points="0,-14 -3,-2 3,-2" fill="#c62828"/>
-        </g>
+        <!-- ── GRUNDSTÜCK ── -->
+        <rect x="20" y="46" width="440" height="380" fill="#edf5ec" stroke="#555" stroke-width="2.5"/>
 
-        <!-- Scale -->
-        <line x1="50" y1="395" x2="170" y2="395" stroke="#333" stroke-width="1.5"/>
-        <line x1="50" y1="390" x2="50" y2="400" stroke="#333" stroke-width="1.5"/>
-        <line x1="170" y1="390" x2="170" y2="400" stroke="#333" stroke-width="1.5"/>
-        <text x="110" y="415" text-anchor="middle" fill="#333" font-size="9">≈ 30 m (Grundstücksbreite)</text>
+        <!-- ── HAUS (rot, Mitte-rechts) ── -->
+        <!-- Haus: x=190 bis x=430, y=90 bis y=280  (240×190) -->
+        <rect x="190" y="90" width="240" height="190" fill="#f4aaaa" stroke="#c62828" stroke-width="2.5" rx="2"/>
+        <text x="310" y="182" text-anchor="middle" fill="#b71c1c" font-size="20" font-weight="700">Haus</text>
+        <text x="310" y="207" text-anchor="middle" fill="#b71c1c" font-size="15" font-weight="600">180m²</text>
+
+        <!-- ── TERRASSE (grün, links vom Haus) ── -->
+        <!-- Terrasse: x=100 bis x=190, y=105 bis y=265  (90×160) -->
+        <rect x="100" y="105" width="90" height="160" fill="#c8e6c9" stroke="#388e3c" stroke-width="1.8" rx="2"/>
+        <text x="145" y="178" text-anchor="middle" fill="#2e7d32" font-size="12" font-weight="600">Terrasse</text>
+        <text x="145" y="196" text-anchor="middle" fill="#2e7d32" font-size="11">32m²</text>
+
+        <!-- ── CARPORT (gelb/orange, unten rechts, gestrichelt) ── -->
+        <!-- CP: x=360 bis x=460, y=290 bis y=380  (100×90) – ragt leicht in den Rand -->
+        <rect x="358" y="294" width="102" height="90" fill="#fff9c4" stroke="#e65100" stroke-width="1.8" stroke-dasharray="7,4" rx="2"/>
+        <text x="409" y="334" text-anchor="middle" fill="#bf360c" font-size="11" font-weight="600">CP</text>
+        <text x="409" y="350" text-anchor="middle" fill="#bf360c" font-size="10">28m²</text>
+
+        <!-- ── GARTEN TEXT (unten links, SW) ── -->
+        <text x="46" y="355" fill="#2e7d32" font-size="17" font-weight="700">☀️ GARTEN</text>
+        <text x="46" y="378" fill="#2e7d32" font-size="15" font-weight="700">360 m²</text>
+        <text x="46" y="400" fill="#388e3c" font-size="13">Südwestlich</text>
+
+        <!-- ── 5m ABSTAND OBEN (N-Straße → Haus) ── -->
+        <!-- Doppelpfeil vertikal bei x=310, von y=46 bis y=90 -->
+        <line x1="310" y1="52" x2="310" y2="84" stroke="#555" stroke-width="1.3"
+              marker-start="url(#arr-rev)" marker-end="url(#arr)"/>
+        <text x="322" y="73" fill="#444" font-size="11" font-weight="600">↕ 5m</text>
+
+        <!-- ── 5m ABSTAND RECHTS (Ostgrenze → Haus) ── -->
+        <!-- Doppelpfeil horizontal bei y=185, von x=430 bis x=460 -->
+        <line x1="436" y1="185" x2="456" y2="185" stroke="#555" stroke-width="1.3"
+              marker-start="url(#arr-rev)" marker-end="url(#arr)"/>
+        <text x="434" y="174" fill="#444" font-size="11" font-weight="600">← 5m →</text>
+
+        <!-- ── RECHTE GRUNDSTÜCKSGRENZE (Ost / Planstraße) ── -->
+        <rect x="460" y="0" width="60" height="480" fill="#cdd5dc" rx="0"/>
+        <text x="490" y="260" text-anchor="middle" fill="#444" font-size="11" font-weight="600" transform="rotate(90,490,260)">PLANSTRASSE (O)</text>
+
+        <!-- ── GRUNDSTÜCKS-UMRANDUNG (Vorderkante Ost) ── -->
+        <line x1="460" y1="46" x2="460" y2="426" stroke="#555" stroke-width="2.5"/>
+
+        <!-- Untere Grundstücksgrenze -->
+        <line x1="20" y1="426" x2="460" y2="426" stroke="#555" stroke-width="2.5"/>
       </svg>
     </div>
     <div class="legend-row">
